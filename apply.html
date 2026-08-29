@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Apply Now - Cornell SensTech</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      .recruitment-page {
+        padding: 48px 0 72px;
+      }
+
+      .recruitment-page .section-intro {
+        max-width: 780px;
+        margin: 28px auto 28px;
+        text-align: center;
+      }
+
+      .recruitment-page .section-intro p {
+        text-align: center;
+        margin: 0;
+      }
+
+      .timeline-card {
+        height: 100%;
+        padding: 22px 24px;
+        border: 1px solid #d9e5f2;
+        border-top: 4px solid #0066cc;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0, 68, 136, 0.08);
+      }
+
+      .timeline-card h3 {
+        font-size: 1.3rem;
+        color: #004499;
+      }
+
+      .timeline-card p {
+        margin: 0;
+        text-align: left;
+      }
+
+      .recruitment-page .highlight {
+        margin: 28px 0 18px;
+        padding: 28px 30px;
+        border-left: 5px solid #0066cc;
+        background: #f1f7fc;
+      }
+
+      .recruitment-page .highlight p:last-child {
+        margin-bottom: 0;
+      }
+
+      .recruitment-page .accordion {
+        max-width: 920px;
+        margin: 0 auto;
+      }
+
+      .recruitment-page .accordion-item {
+        margin-bottom: 12px;
+        overflow: hidden;
+        border: 1px solid #d9e5f2;
+        border-radius: 6px;
+      }
+
+      .recruitment-page .accordion-button {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: #2c3e50;
+      }
+
+      .recruitment-page .accordion-button:not(.collapsed) {
+        color: #004499;
+        background: #f1f7fc;
+        box-shadow: none;
+      }
+
+      .recruitment-page .accordion-body {
+        padding: 26px 28px;
+      }
+
+      .recruitment-page .accordion-body p,
+      .recruitment-page .accordion-body li {
+        text-align: left;
+      }
+
+      .recruitment-page .accordion-body p:last-child,
+      .recruitment-page .accordion-body ul:last-child {
+        margin-bottom: 0;
+      }
+
+      .recruitment-page .accordion-body ul {
+        padding-left: 1.25rem;
+      }
+
+      .hero-apply-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .hero-apply-actions .apply-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 48px;
+        padding: 12px 18px;
+        border: 2px solid #0566c6;
+        border-radius: 5px;
+        background: #0566c6;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 1.3;
+        text-align: left;
+        transition: background 0.2s ease, border-color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .hero-apply-actions .apply-button:hover,
+      .hero-apply-actions .apply-button:focus {
+        border-color: #004499;
+        background: #004499;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      .recruitment-nav {
+        max-width: 600px;
+        margin: 28px auto 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .recruitment-nav-item {
+        border: 1px solid rgba(44, 62, 80, 0.12);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.8);
+        overflow: hidden;
+      }
+
+      .recruitment-nav-button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 14px 18px;
+        border: 0;
+        background: transparent;
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(1.05rem, 1.6vw, 1.55rem);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: #1d2f3f;
+        text-align: left;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+
+      .recruitment-nav-button:hover,
+      .recruitment-nav-button:focus {
+        background: rgba(4, 102, 198, 0.04);
+        color: #004499;
+      }
+
+      .recruitment-nav .nav-text {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .recruitment-nav .nav-icon {
+        width: 26px;
+        text-align: center;
+        display: inline-block;
+        font-size: 0.9em;
+      }
+
+      .recruitment-nav .nav-arrow {
+        color: #0066cc;
+        font-size: 1.15rem;
+        line-height: 1;
+      }
+
+      .recruitment-panel {
+        border-top: 1px solid rgba(44, 62, 80, 0.08);
+        background: #ffffff;
+      }
+
+      .recruitment-panel-body {
+        padding: 18px 20px 20px;
+      }
+
+      .recruitment-panel-body p,
+      .recruitment-panel-body li {
+        text-align: left;
+        margin-bottom: 0.8rem;
+      }
+
+      .recruitment-panel-body ul {
+        margin-bottom: 0;
+        padding-left: 1.2rem;
+      }
+
+      .form-link-box {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 48px;
+        padding: 12px 18px;
+        border: 2px solid #0566c6;
+        border-radius: 5px;
+        background: #0566c6;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 1.3;
+        text-decoration: none;
+        transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .form-link-box:hover,
+      .form-link-box:focus {
+        border-color: #004499;
+        background: #004499;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 767px) {
+        .recruitment-page {
+          padding: 52px 0 68px;
+        }
+
+        .recruitment-page .highlight {
+          margin: 36px 0;
+          padding: 28px 24px;
+        }
+
+        .hero-apply-actions {
+          align-items: stretch;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .hero-apply-actions .apply-button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+
+    <!-- =======================================================
+  * Template Name: Techie
+  * Updated: Jan 09 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-inner-pages">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo">
+          <a href="index.html" class="logo"
+            ><img src="assets/img/logo.png" alt="" class="img-fluid"
+          /></a>
+        </h1>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About</a></li>
+            <li><a class="nav-link scrollto" href="team.html">Our Team</a></li>
+            <li>
+              <a class="nav-link scrollto" href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto active" href="apply.html"
+                >Recruitment</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Hero Section ======= -->
+      <section id="hero-sec" class="d-flex align-items-center mt-5">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div
+              class="col-xl-5 col-lg-6 pt-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+            >
+              <h1>Recruitment</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+
+      <!-- ======= Recruitment Information Section ======= -->
+      <section class="recruitment-page">
+        <div class="container">
+          <div class="section-intro" data-aos="fade-up">
+            <h2>Join Cornell SensTech</h2>
+          </div>
+
+          <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+              <article class="timeline-card">
+                <h3>Freshmen / Transfers / Graduate Students</h3>
+                <p>
+                  Information Session 1: Will be announced soon!<br />
+                  Information Session 2: Will be announced soon!<br />
+                  Information Session 3: Will be announced soon!<br />
+
+                  Applications Close: <strong>Monday, September 3rd at 11:59pm</strong><br />
+                  Final Decisions: <strong>Wednesday, September 16th</strong>
+                </p>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="timeline-card">
+                <h3>Upperclassmen</h3>
+                <p>
+                  Information Session 1: Will be announced soon!<br />
+                  Information Session 2: Will be announced soon!<br />
+                  Information Session 3: Will be announced soon!<br />
+                  Applications Close: <strong>Thursday, October 15th at 11:59pm</strong><br />
+                  Final Decisions: <strong>Monday, November 2nd</strong>
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+              <article class="timeline-card">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1g8S7CiGRufkTWxPCMAbt-aprjkdmEFJjxnsGKCpYKIsh2A/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="form-link-box">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  Freshmen, Transfers &amp; Graduate Students
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="timeline-card">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeE1eT494Qf977Xq9N23ghaktxOKsgJT9xgWQd1vDBqveFBTg/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="form-link-box">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  Upperclassmen
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <div class="section-intro" data-aos="fade-up">
+            <h2>Recruitment Details</h2>
+            <p>Explore the role, process, and expectations before applying.</p>
+          </div>
+
+          <div class="recruitment-nav" aria-label="Recruitment quick links" data-aos="fade-up">
+            <div class="recruitment-nav-item">
+              <button class="recruitment-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#recruitment-panel-1" aria-expanded="false" aria-controls="recruitment-panel-1">
+                <span class="nav-text"><span class="nav-icon">👥</span>Who We Are Looking For</span>
+                <span class="nav-arrow">→</span>
+              </button>
+              <div id="recruitment-panel-1" class="collapse recruitment-panel">
+                <div class="recruitment-panel-body">
+                  <p>
+                    The qualities we value most are passion, adaptability, and a dedication to learning. Experience can be helpful, but we would rather welcome inexperienced applicants who are driven to make the team successful and can learn on the go than applicants who are not excited by the work.
+                  </p>
+                  <p>
+                    If you are interested in a fast-paced environment, leading large parts of a project, learning new engineering and business practices every day, and creating a sensor that can impact daily lives, we want to see your application.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recruitment-nav-item">
+              <button class="recruitment-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#recruitment-panel-2" aria-expanded="false" aria-controls="recruitment-panel-2">
+                <span class="nav-text"><span class="nav-icon">🏁</span>What To Expect From The Team</span>
+                <span class="nav-arrow">→</span>
+              </button>
+              <div id="recruitment-panel-2" class="collapse recruitment-panel">
+                <div class="recruitment-panel-body">
+                  <p>
+                    We are a new project team, similar to a startup, working from the ground up to form a unique minimum viable product that could reach the general public through further development. Each year brings a new cycle of product development, business modeling, and fundraising from companies.
+                  </p>
+                  <p>
+                    We continuously improve and restructure our organizational practices to meet members' needs and expectations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recruitment-nav-item">
+              <button class="recruitment-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#recruitment-panel-3" aria-expanded="false" aria-controls="recruitment-panel-3">
+                <span class="nav-text"><span class="nav-icon">📝</span>Application Process</span>
+                <span class="nav-arrow">→</span>
+              </button>
+              <div id="recruitment-panel-3" class="collapse recruitment-panel">
+                <div class="recruitment-panel-body">
+                  <p><strong>Round 1: Application questions.</strong></p>
+                  <p><strong>Round 2: Behavioral + technical interview (invite only).</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recruitment-nav-item">
+              <button class="recruitment-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#recruitment-panel-4" aria-expanded="false" aria-controls="recruitment-panel-4">
+                <span class="nav-text"><span class="nav-icon">ℹ️</span>Information Sessions</span>
+                <span class="nav-arrow">→</span>
+              </button>
+              <div id="recruitment-panel-4" class="collapse recruitment-panel">
+                <div class="recruitment-panel-body">
+                  <p>
+                    Information sessions are a chance to learn more about the team, the project, and what life in SensTech looks like. These are especially useful for students who want to hear directly about subteam responsibilities, project goals, and what the recruiting process involves.
+                  </p>
+                  <p>
+                    Session details will be shared soon, and all interested students are encouraged to attend.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recruitment-nav-item">
+              <button class="recruitment-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#recruitment-panel-5" aria-expanded="false" aria-controls="recruitment-panel-5">
+                <span class="nav-text"><span class="nav-icon">☕</span>Coffee Chats</span>
+                <span class="nav-arrow">→</span>
+              </button>
+              <div id="recruitment-panel-5" class="collapse recruitment-panel">
+                <div class="recruitment-panel-body">
+                  <p>
+                    Coffee chats are a casual way to meet current members, learn more about the team, and ask questions before applying. They are a great option if you want a lower-pressure way to understand what SensTech is about.
+                  </p>
+                  <p>
+                    Details will be shared when the next chat is scheduled.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="recruitment-nav-item">
+              <button class="recruitment-nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#recruitment-panel-6" aria-expanded="false" aria-controls="recruitment-panel-6">
+                <span class="nav-text"><span class="nav-icon">❓</span>Frequently Asked Questions</span>
+                <span class="nav-arrow">→</span>
+              </button>
+              <div id="recruitment-panel-6" class="collapse recruitment-panel">
+                <div class="recruitment-panel-body">
+                  <p><strong>Do I need prior experience?</strong> Not necessarily. We value passion, adaptability, and a willingness to learn.</p>
+                  <p><strong>Can I apply if I am a freshman or transfer student?</strong> Yes. We welcome freshmen, transfer students, and graduate students to apply.</p>
+                  <p><strong>Is this a commitment-heavy team?</strong> Yes, but the work is rewarding and the time commitment is balanced across technical and business work.</p>
+                  <p><strong>Are there interview rounds?</strong> Yes. After the first round of application review, shortlisted applicants are invited to a second round of interviews.</p>
+                  <p><strong>How do I get more information before applying?</strong> Attend an information session or coffee chat, and review the application process and team overview on this page.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight" data-aos="fade-up">
+            <h2>What You Can Gain</h2>
+            <p>
+              SensTech is a small, fast-paced project team. Every member has an
+              opportunity to influence our direction as we develop a biosensor
+              and business model from ideation to prototype. Both R&amp;D and
+              Business members are essential: the competition culminates in pitch
+              decks, proposals, and networking events in the Netherlands, where
+              the translation potential of our device and the science behind it
+              are equally important.
+            </p>
+            <p>
+              Because we are in the early stages of development, incoming members
+              can gain extensive leadership experience in technical and business
+              areas while helping build the presence of a new Cornell project team.
+            </p>
+          </div>
+
+        </div>
+      </section>
+      <!-- End Recruitment Information Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-columns">
+            <div class="footer-col">
+              <h4>Cornell SensTech</h4>
+              <p>Ithaca, NY 14850</p>
+              <p>
+                This organization is a registered student organization of
+                Cornell University |
+                <a
+                  href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+                  target="_blank"
+                  style="color: darkblue"
+                  class="eeeo-link"
+                  >Equal Education & Employment Statement</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright-wrap d-md-flex py-4">
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Techie</span></strong
+              >. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+          <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="mailto:cornellsenstech@gmail.com" class="email"
+              ><i class="bx bx-envelope"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/senstechcornell/?hl=en"
+              class="instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/cornell-senstech"
+              class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://pool-pilot-c7a.notion.site/Cornell-SensTech-Recruitment-Page-8532549cfdd54c7899b140afaa03970d"
+              class="notion"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"
+                alt="Notion"
+                style="width: 20px; height: 20px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
