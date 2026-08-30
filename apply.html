@@ -163,18 +163,25 @@
       }
 
       .recruitment-nav {
-        max-width: 600px;
+        max-width: 1100px;
         margin: 28px auto 28px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
       }
 
       .recruitment-nav-item {
         border: 1px solid rgba(44, 62, 80, 0.12);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.8);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.9);
         overflow: hidden;
+        box-shadow: 0 8px 20px rgba(15, 41, 66, 0.04);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .recruitment-nav-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(15, 41, 66, 0.08);
       }
 
       .recruitment-nav-button {
@@ -183,11 +190,12 @@
         align-items: center;
         justify-content: space-between;
         gap: 14px;
-        padding: 14px 18px;
+        min-height: 86px;
+        padding: 18px 20px;
         border: 0;
         background: transparent;
         font-family: "Poppins", sans-serif;
-        font-size: clamp(1.05rem, 1.6vw, 1.55rem);
+        font-size: clamp(1rem, 1.6vw, 1.35rem);
         font-weight: 600;
         letter-spacing: -0.02em;
         color: #1d2f3f;
@@ -278,6 +286,10 @@
           padding: 28px 24px;
         }
 
+        .recruitment-nav {
+          grid-template-columns: 1fr;
+        }
+
         .hero-apply-actions {
           align-items: stretch;
           flex-direction: column;
@@ -365,8 +377,8 @@
                   Information Session 2: Will be announced soon!<br />
                   Information Session 3: Will be announced soon!<br />
 
-                  Applications Close: <strong>Monday, September 3rd at 11:59pm</strong><br />
-                  Final Decisions: <strong>Wednesday, September 16th</strong>
+                  Applications Close: <strong>Thursday, October 15th at 11:59pm</strong><br />
+                  Final Decisions: <strong>Monday, November 2nd</strong>
                 </p>
               </article>
             </div>
@@ -377,8 +389,8 @@
                   Information Session 1: Will be announced soon!<br />
                   Information Session 2: Will be announced soon!<br />
                   Information Session 3: Will be announced soon!<br />
-                  Applications Close: <strong>Thursday, October 15th at 11:59pm</strong><br />
-                  Final Decisions: <strong>Monday, November 2nd</strong>
+                  Applications Close: <strong>Monday, September 3rd at 11:59pm</strong><br />
+                  Final Decisions: <strong>Wednesday, September 16th</strong>
                 </p>
               </article>
             </div>
