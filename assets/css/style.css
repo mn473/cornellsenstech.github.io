@@ -1996,9 +1996,94 @@ section {
   border-radius: 8px;
 }
 
-/* extra spacing between mission text and images */
-.mission .col-lg-7 {
+/* Mission (left) + news panel (right) layout */
+.mission {
+  text-align: left;
+}
+.section-kicker {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0066cc;
   margin-bottom: 16px;
+}
+.mission-main {
+  padding-right: 32px;
+  margin-bottom: 32px;
+}
+.mission-headline {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+.mission .swiper-slide img {
+  height: 340px;
+}
+
+.news-panel {
+  background: #f4f7fb;
+  border-radius: 8px;
+  padding: 20px 22px;
+  height: 100%;
+}
+.news-item {
+  display: block;
+  padding: 16px 0;
+  border-top: 1px solid rgba(44, 62, 80, 0.15);
+  color: #2c3e50;
+  text-decoration: none;
+}
+.news-item-feature {
+  border-top: none;
+  padding-top: 0;
+}
+.news-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 4px 0 6px;
+  color: #2c3e50;
+  transition: color 0.2s;
+}
+.news-item:hover h3 {
+  color: #0066cc;
+}
+.news-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #0066cc;
+}
+.news-meta {
+  font-size: 0.85rem;
+  color: #5a6b7b;
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .news-panel {
+    border-left: 2px solid #0066cc;
+  }
+}
+@media (max-width: 991px) {
+  .mission-main {
+    padding-right: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .mission .swiper-slide img {
+    height: 240px;
+  }
+  .mission-headline {
+    font-size: 1.6rem;
+  }
+  .mission .swiper {
+    margin-top: 8px;
+  }
 }
 
 /*--------------------------------------------------------------
